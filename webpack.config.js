@@ -12,7 +12,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/index.html',
         title: 'Restaurant Page',
-        watchFiles: ['src/**/*.php', '.src/*/*', './src/index.js', './src/index.html', 'public/**/*'],
+        watchFiles: ['src/**/*.php', '.src/*.*', './src/index.js', './src/index.html', 'public/**/*'],
     }),
   ],
   output: {

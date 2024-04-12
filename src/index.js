@@ -1,8 +1,16 @@
-//import image1 from '../assets/images/garlicBread.png';
+import image1 from '../assets/images/garlicBread.png';
+import './style.css';
 
-import image1 from './garlicBread.png';
 
-console.log("Logging:");
+function head_name() {
+    const element = document.createElement('h1');
+    element.innerText="Occasions";
+    element.classList.add("restName");
+    return element;
+}
+
+document.querySelector('#headName').appendChild(head_name());
+
 
 function image1_component() {
     const element = document.createElement('div');
@@ -15,6 +23,4 @@ function image1_component() {
     return element;
 }
 
-document.body.appendChild(image1_component());
-
-//document.querySelector('#content').appendChild(image1_component());
+document.querySelector('#content').appendChild(image1_component());
