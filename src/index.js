@@ -11,6 +11,15 @@ function head_name() {
 
 document.querySelector('#headName').appendChild(head_name());
 
+function sideBarText() {
+    const element = document.createElement('h3');
+    element.innerText="Sumptuous dining, relaxed environment, excellent service";
+    element.classList.add("sideText_1");
+    return element;
+}
+
+document.querySelector('.sideBar').appendChild(sideBarText());
+
 
 function image1_component() {
     const element = document.createElement('div');

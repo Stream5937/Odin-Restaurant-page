@@ -21,17 +21,20 @@ body {
 header {
     display:grid;
     grid-area: 1/1/2/2;
-    grid-template-columns: 4fr repeat(3,1fr);
-    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 4fr repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
     background-color:linen;
     border-bottom: 3px;
     border-color: brown;
     border-style: solid;
 }
 
-div#head-name {
+div#headName {
     display:grid;
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/3/2;
+    justify-content: left;
+    align-items: center;
+    padding-left:20px;
 }
 
 .restName {
@@ -60,22 +63,53 @@ button {
 
 button#btn1 {
     display:grid;
-    grid-area: 2/2/3/3; 
+    grid-area: 1/2/2/3; 
 }
 
 button#btn2 {
     display:grid;
-    grid-area: 2/3/3/4;
+    grid-area: 1/3/2/4;
 }
 
 button#btn3 {
     display:grid;
-    grid-area: 2/4/3/5;
+    grid-area: 1/4/2/5;
+}
+
+
+div.container{
+    display:grid;
+    grid-area: 2/1/3/2;
+    grid-template-columns: 1fr 4fr;
+    height:100%;
+    width:100%;
+
+}
+
+div.sideBar{
+    display:grid;
+    grid-area: 1/1/2/2;
+    background-color:linen ;
+    height:100%;
+    width: 100%;
+    border-right: 3px;
+    border-color: brown;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.sideText_1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: brown;
+    padding-left: 20px;;
 }
 
 div#content {
     display:grid;
-    grid-area: 2/1/6/2;
+    grid-area: 1/2/2/3;
     justify-content: center;
     align-items: center;
 }
