@@ -37,7 +37,15 @@ div#headName {
     padding-left:20px;
 }
 
+/* original in index.js */
 .restName {
+    font-size: 5rem;
+    font-weight: 700;
+    color: brown;
+}
+
+/* this to test import from functions.js */
+.rest_Name {
     font-size: 5rem;
     font-weight: 700;
     color: brown;

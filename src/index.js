@@ -1,23 +1,32 @@
 import image1 from '../assets/images/garlicBread.png';
 import './style.css';
+/* works
+import {head_name} from './functions.js';
+import {sideBarText} from './functions.js';
+*/
+
+// Destructuring -> also works
+import { head_name, sideBarText } from './functions.js';
 
 
+/* moved to functions.js
 function head_name() {
     const element = document.createElement('h1');
     element.innerText="Occasions";
     element.classList.add("restName");
     return element;
 }
-
+*/
 document.querySelector('#headName').appendChild(head_name());
 
+/* moved to functions.js
 function sideBarText() {
     const element = document.createElement('h3');
     element.innerText="Sumptuous dining, relaxed environment, excellent service";
     element.classList.add("sideText_1");
     return element;
 }
-
+*/
 document.querySelector('.sideBar').appendChild(sideBarText());
 
 
