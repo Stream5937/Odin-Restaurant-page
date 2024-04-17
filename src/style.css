@@ -41,8 +41,8 @@ div#headName {
 .restName {
     font-size: 5rem;
     font-weight: 700;
-    color: brown;
-}
+    color: blue;
+} 
 
 /* this to test import from functions.js */
 .rest_Name {
@@ -108,10 +108,24 @@ div.sideBar{
     border-left: none;
 }
 
-.sideText_1 {
+.sideText_home {
     font-size: 3rem;
     font-weight: 400;
     color: brown;
+    padding-left: 20px;;
+}
+
+.sideText_menu {
+    font-size: 3rem;
+    font-weight: 400;
+    color: blue;
+    padding-left: 20px;;
+}
+
+.sideText_about {
+    font-size: 3rem;
+    font-weight: 400;
+    color: green;
     padding-left: 20px;;
 }
 
@@ -120,4 +134,17 @@ div#content {
     grid-area: 1/2/2/3;
     justify-content: center;
     align-items: center;
+}
+
+ul {
+    list-style: none;
+  }
+
+.tab {
+    display: grid;  
+}
+
+.active {
+    color: orange;
+    font-weight: 800;           
 }

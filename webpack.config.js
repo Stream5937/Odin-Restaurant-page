@@ -12,11 +12,12 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/index.html',
         title: 'Restaurant Page',
-        watchFiles: ['src/**/*.php', '.src/*.*', './src/index.js', './src/index.html', 'public/**/*'],
+        watchFiles: ['./src/*.*', './src/index.js', './src/index.html', 'public/**/*'],
+        inject:false,
     }),
   ],
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean:true,
   },
