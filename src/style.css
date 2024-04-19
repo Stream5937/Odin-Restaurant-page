@@ -94,18 +94,20 @@ div.container{
 
 }
 
-div.sideBar{
+div#sideBar{
+/*div.sideBar{*/
     display:grid;
     grid-area: 1/1/2/2;
     background-color:linen ;
     height:100%;
-    width: 100%;
+    width: 350px;
     border-right: 3px;
     border-color: brown;
     border-style: solid;
     border-top: none;
     border-bottom: none;
     border-left: none;
+    grid-template-columns: 1fr;
 }
 
 .sideText_home {

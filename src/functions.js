@@ -1,7 +1,9 @@
+
+// --------------  MOVED TO SEPARATE MODULES -----------------------------------------
 //imports
-import image1 from '../assets/images/garlicBread.png';
-import image2 from '../assets/images/mapleSprouts.png';
-import image3 from '../assets/images/potatoSalad.png';
+//import image1 from '../assets/images/garlicBread.png';
+//import image2 from '../assets/images/mapleSprouts.png';
+//import image3 from '../assets/images/potatoSalad.png';
 
 //text --------------------------------------------------------------------------------
 //restaurant name
@@ -12,7 +14,7 @@ export const head_name = () => {
     return element;
 }
 
-
+/* -------------  MOVED TO SEPARATE MODULES --------------------------------------------
 //home tab -----------------------------------------------------------------------------
 
 //sidebar text home page version
@@ -92,5 +94,4 @@ export const image3_component = () => {
     return element;     
 }
 
-
-//--------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------  */

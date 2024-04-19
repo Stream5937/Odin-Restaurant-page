@@ -13,10 +13,13 @@ module.exports = {
         template: './src/index.html',
         title: 'Restaurant Page',
         watchFiles: ['./src/*.*', './src/index.js', './src/index.html', 'public/**/*'],
-        inject:false,
+        inject:false,   //stops double loading
     }),
   ],
   output: {
+    //NOT using  .[contenthash]  to provide unique bundle name each time thus avoid build from cache
+    //Not working filename: 'bundle.[contenthash].js',
+    //Not working filename: '[name].[contenthash].js',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean:true,
@@ -33,4 +36,19 @@ module.exports = {
       },
     ]
   },
+  /* dealing with caching NOT working yet!
+  optimization: {
+    runtimeChunk: 'single',
+    moduleIds: 'deterministic',       //  'hashed',
+    splitChunks: {
+        cacheGroups: {
+            vendor: {
+                test: /[\\/]node_modules[\\/]/,
+                name: 'vendors',
+                chunks: 'all',
+            },
+        },
+    },
+},
+*/
 };
